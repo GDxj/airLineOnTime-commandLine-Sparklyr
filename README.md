@@ -14,4 +14,7 @@
     
   2. sparkly uses lazy query that the manipulation part (pipes) is not done until we use it. 
     - to speed it up we can use 'collect' then 'readRDS' to save it to disk
-  3. fitting a simple ml model to predict delay or not
+
+## future goal:
+  1. fit a simple ml model to predict delay or not
+  2. fit a time series model on mean delay time each day over the 30 years
