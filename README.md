@@ -10,7 +10,7 @@
     
     - copy header to new csv: head -1 airOT198710.csv > combined.csv
     
-    - for file in $(ls airOT*); do cat $file | sed "1 d" >> combined.csv; done
+    - merge: for file in $(ls airOT*); do cat $file | sed "1 d" >> combined.csv; done
     
   2. sparkly uses lazy query that the manipulation part (pipes) is not done until we use it. 
     - to speed it up we can use 'collect' then 'readRDS' to save it to disk
